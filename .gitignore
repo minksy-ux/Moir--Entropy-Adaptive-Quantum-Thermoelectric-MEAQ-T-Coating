@@ -1,0 +1,13 @@
+.venv/
+.pytest_cache/
+__pycache__/
+*.pyc
+
+*.egg-info/
+
+# Generated local outputs
+coating_*.csv
+composition_screen.csv
+moire_scan.csv
+dft_summary.csv
+figures/
