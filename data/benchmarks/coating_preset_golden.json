@@ -1,0 +1,20 @@
+{
+  "balanced": {
+    "protective": "bio_vitrimer_imine_sio2_2wt",
+    "interlayer": "he_perovskite_sr_la_nd_sm_eu_tio3",
+    "moire": "wse2_twist_hbn",
+    "substrate": "he_ceramic"
+  },
+  "prototype_low_temp": {
+    "protective": "bio_vitrimer_imine_sio2_2wt",
+    "interlayer": "he_perovskite_sr_la_nd_sm_eu_tio3",
+    "moire": "wse2_twist_hbn",
+    "substrate": "he_ceramic"
+  },
+  "extreme_uht": {
+    "protective": "yb2si2o7_sic",
+    "interlayer": "he_carbide_hf_zr_nb_ta",
+    "moire": "wse2_twist_hbn",
+    "substrate": "he_ceramic"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "composition": {
+    "min_score": 0.0,
+    "max_score": 1.0,
+    "min_smix_over_r": 1.5
+  },
+  "pulse": {
+    "default_switching_expected": true
+  },
+  "moire": {
+    "min_rows": 4
+  }
+}
