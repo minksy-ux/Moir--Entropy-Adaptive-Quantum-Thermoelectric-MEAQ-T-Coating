@@ -203,6 +203,53 @@ Useful optimizer controls:
 3. Characterization: Seebeck/Nernst vs gate and temperature, pump-probe pulse tests, and thermal cycling/healing retention.
 4. Optimization: update composition, twist angle, and pulse windows from measured feedback.
 
+## Novelty Evidence Map
+
+To strengthen novelty framing with concrete literature anchors, this repository now includes:
+
+1. [docs/novelty_evidence_map.md](docs/novelty_evidence_map.md)
+
+The map organizes references across four pillars:
+
+1. Moire thermoelectricity and heavy-fermion correlation effects in MoTe2/WSe2-class systems.
+2. High-entropy thermoelectrics and entropy-stabilized coating design.
+3. Pulse and spin-texture control pathways relevant to switching and thermoelectric readout.
+4. Self-healing strategies for extreme-environment coatings.
+
+Novelty position supported by this map:
+
+1. Each pillar is individually literature-grounded.
+2. The integrated architecture (moire transport + entropy engineering + pulse reconfigurability + self-healing durability) remains the differentiating contribution.
+
+## References (Working Bibliography)
+
+Machine-readable bibliography:
+
+1. [docs/references.bib](docs/references.bib)
+
+Numbered reference anchors used for novelty framing:
+
+1. Zhang et al. Thermoelectricity of Moire Heavy Fermions in MoTe2/WSe2 Bilayers (PRL 2026, arXiv:2510.26958).
+2. Kumar et al. Moire-pattern-assisted thermoelectric enhancement in twisted WSe2 bilayer (PCCP 2026).
+3. Ultra-Low Thermal Conductivity of Moire Diamanes.
+4. Colossal Layer Nernst Effect in Twisted Moire Layers.
+5. Emerging Characteristics and Properties of Moire Materials.
+6. High-Entropy Engineering in Thermoelectric Materials: A Review.
+7. Review of high-entropy thermoelectric materials: Design, synthesis, characterization, and properties.
+8. High- and medium-entropy nitride coatings in Cr-Hf-Mo-Ta systems.
+9. Super-moire spin textures in twisted two-dimensional antiferromagnets.
+10. Double-pulse control of all-optical magnetization reversal in Tb/Co multilayers.
+11. Thermal generation, manipulation and thermoelectric detection of skyrmions.
+12. Self-Healing Coatings in Extreme Environments.
+13. Self-healing ceramic coatings: Mechanisms, design strategies, and emerging applications for extreme environments.
+14. Intelligent Self-Healing Polymeric Systems for Functional and Durable Coatings.
+15. An Extreme-Environment-Resistant Self-Healing Anti-Icing Coating.
+
+Metadata note:
+
+1. This bibliography is intentionally kept as a working set based on current project anchors.
+2. Before manuscript submission, replace placeholder fields in [docs/references.bib](docs/references.bib) with verified author lists, DOI, volume, issue, and page ranges.
+
 ## First Coding Scaffolds (Implemented)
 
 This repository now includes four starter modules under `src/meaqt`:
