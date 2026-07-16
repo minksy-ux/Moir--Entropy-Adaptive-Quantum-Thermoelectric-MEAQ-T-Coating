@@ -7,7 +7,6 @@ import pandas as pd
 
 from meaqt.coating_optimizer import optimize_stacks
 
-
 ID_COLS = ["protective", "interlayer", "moire", "substrate"]
 METRIC_COLS = ["score", "heat_tol", "radiation_tol", "healing_rate", "thermal_kappa_wmk", "coupling"]
 
@@ -41,19 +40,19 @@ def _stack_id_col(df: pd.DataFrame) -> pd.Series:
 
 
 def _by_rank_table(left: pd.DataFrame, right: pd.DataFrame, left_name: str, right_name: str) -> pd.DataFrame:
-    l = left.copy().reset_index(drop=True)
-    r = right.copy().reset_index(drop=True)
-    rows = min(len(l), len(r))
+    left_df = left.copy().reset_index(drop=True)
+    right_df = right.copy().reset_index(drop=True)
+    rows = min(len(left_df), len(right_df))
 
     return pd.DataFrame(
         {
             "rank": range(1, rows + 1),
-            f"{left_name}_stack": _stack_id_col(l.iloc[:rows]),
-            f"{left_name}_score": l.iloc[:rows]["score"].to_numpy(),
-            f"{right_name}_stack": _stack_id_col(r.iloc[:rows]),
-            f"{right_name}_score": r.iloc[:rows]["score"].to_numpy(),
-            f"delta_{left_name}_minus_{right_name}_score": l.iloc[:rows]["score"].to_numpy()
-            - r.iloc[:rows]["score"].to_numpy(),
+            f"{left_name}_stack": _stack_id_col(left_df.iloc[:rows]),
+            f"{left_name}_score": left_df.iloc[:rows]["score"].to_numpy(),
+            f"{right_name}_stack": _stack_id_col(right_df.iloc[:rows]),
+            f"{right_name}_score": right_df.iloc[:rows]["score"].to_numpy(),
+            f"delta_{left_name}_minus_{right_name}_score": left_df.iloc[:rows]["score"].to_numpy()
+            - right_df.iloc[:rows]["score"].to_numpy(),
         }
     )
 
