@@ -7,8 +7,8 @@ This package provides starter modules for:
 - coating stack optimization.
 """
 
-from .composition import screen_compositions
 from .coating_optimizer import optimize_stacks
+from .composition import screen_compositions
 from .dft_adapters import parse_dft_report, parse_dft_text
 from .moire_transport import scan_moire_response
 from .plotting import (

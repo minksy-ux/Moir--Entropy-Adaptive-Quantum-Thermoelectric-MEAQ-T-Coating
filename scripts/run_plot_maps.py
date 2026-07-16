@@ -5,7 +5,6 @@ import argparse
 from pathlib import Path
 
 import numpy as np
-import pandas as pd
 
 from meaqt.coating_optimizer import optimize_stacks, pareto_front
 from meaqt.moire_transport import scan_moire_response
